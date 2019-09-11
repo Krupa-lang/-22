@@ -42,6 +42,7 @@ namespace BookApp53
         {
             int h = hanu.Homer * 36000;
             int m = hanu.Minut * 120;
+            string a = "";
             return new Counter { Second = h + m + hanu.Second };
         }
         public static implicit operator Hanu ( Counter counter)
